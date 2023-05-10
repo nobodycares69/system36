@@ -1,0 +1,13 @@
+burp suite:
+Firefox: network settings: 8081 in port
+Same in proxy settings of burp suite
+Go on altoro mutual
+intercept on
+login
+Go on burp suite-right click send to intruder
+clear $ , add only on username passwd
+attack type:cluster bomb
+payloads:
+payload1: enter username
+payload2: enter password
+start attack

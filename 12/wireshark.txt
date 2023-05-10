@@ -1,0 +1,14 @@
+wireshark:
+3 way handshake:
+wifi-start capture
+search for green line
+this is 3 way handshake-request, acknowledge, access
+
+
+difference between http and https:
+wifi start capture
+open website-admin admin
+stop wireshark
+http-post method-follow-tcp stream/http stream-find admin-here you can find password
+
+https-udp/rttp-follow-udp stream-encoded, you can't find passwd

@@ -1,0 +1,26 @@
+Multiplication: Multiply each character of the input string with a constant prime number and add them together.
+
+Bitwise XOR: XOR the result from step 1 with a constant key value.
+
+Modular Arithmetic: Take the result from step 2 and perform modular arithmetic with a large prime number to get the final hash value.
+
+Here's how the algorithm works in detail:
+
+Multiplication: Choose a constant prime number (e.g. 31, 37, or 41) and multiply each character of the input string by that number. Add up the results of these multiplications to get a preliminary hash value.
+For example, if our input string is "hello", and we choose the prime number 31, we would do:
+
+h * 31 + e * 31 + l * 31 + l * 31 + o * 31 = 8 * 31 + 5 * 31 + 12 * 31 + 12 * 31 + 15 * 31 = 1426
+
+Bitwise XOR: Choose a constant key value (e.g. a 32-bit integer) and XOR the preliminary hash value with that key value.
+For example, if our key value is 0xCAFEBABE, we would do:
+
+1426 ^ 0xCAFEBABE = 3409462377
+
+Modular Arithmetic: Choose a large prime number (e.g. 2^31-1 or 2^32-1) and perform modular arithmetic on the XOR result from step 2 to get the final hash value.
+For example, if we choose the prime number 2^32-1, we would do:
+
+3409462377 % (2^32-1) = 3409462377
+
+Therefore, the final hash value for the input string "hello" using this algorithm would be 3409462377.
+
+This algorithm is not considered cryptographically secure and should not be used for secure applications. However, it is suitable for basic hashing purposes.

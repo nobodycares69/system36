@@ -1,5 +1,0 @@
-0 a 9
-1 b c+d
-2 e c+f
-3 f b+e
-4 r f
