@@ -1,0 +1,10 @@
+#include <iostream> 
+void main ( ) 
+{ int a = 3 ; 
+int b = 6.5 ; 
+int c = 9 ; 
+int d = a + b + c ; 
+cout << d ; 
+cout << "Nitesh" << endl ; 
+//Helloworld 
+} 
